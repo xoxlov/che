@@ -1,0 +1,43 @@
+{
+    "type":"object",
+    "required":["fromDate", "toDate", "success",   "tourists", "products", "calcResult", "calculationCode"],
+    "additionalProperties":false,
+    "properties":{
+        "fromDate": {"type":"string", "pattern":"^[0-9]{2}.[0-9]{2}.[0-9]{4}"},
+        "toDate": {"type":"string", "pattern":"^[0-9]{2}.[0-9]{2}.[0-9]{4}"},
+        "success": {"type":"boolean"},
+        "tourists": {"type":"integer", "minimum":1, "exclusiveMinimum":false},
+        "products": {
+            "type":"array",
+            "items":{
+                "type":"object",
+                "required":["id", "name", "price", "pricePerItem", "serviceData"],
+                "additionalProperties":false,
+                "properties": {
+                    "id": {"type":"number"},
+                    "name": {"type":"string"},
+                    "price": {"type":"number", "minimum":0, "exclusiveMinimum":false},
+                    "pricePerItem": {
+                        "anyOf": [
+                            {"type":"number", "minimum":0, "exclusiveMinimum":false},
+                            {"type":"array", "minitems":1, "items":{"type":"number", "minimum":0, "exclusiveMinimum":false}}
+                        ]
+                    },
+                    "serviceData": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "imputed.delay_dock": {"type":"number", "minimum":0, "exclusiveMinimum":false, "maximum":2147483647, "exclusiveMaximum":false},
+                            "imputed.avia_cargo": {"type": "number", "minimum": 0, "exclusiveMinimum": false, "maximum":2147483647, "exclusiveMaximum":false},
+                            "imputed.delay_regular": {"type": "number", "minimum": 0, "exclusiveMinimum": false, "maximum":2147483647, "exclusiveMaximum":false},
+                            "imputed.cancel": {"type": "number", "minimum": 0, "exclusiveMinimum": false, "maximum":2147483647, "exclusiveMaximum":false},
+                            "imputed.avia_accident": {"type": "number", "minimum": 0, "exclusiveMinimum": false, "maximum":2147483647, "exclusiveMaximum":false}
+                        }
+                    }
+                }
+            }
+        },
+        "calcResult": {"type":"number", "minimum":0, "exclusiveMinimum":false},
+        "calculationCode": {"type":"string", "pattern":"^[0-9A-Za-z]{8}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{12}"}
+    }
+}

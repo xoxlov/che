@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": ["status", "error"],
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "type": "number",
+      "minimum": 400,
+      "maximum": 530,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false
+    },
+    "error": {
+      "type": "object",
+      "required": ["type", "message", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {"type": "string"},
+        "message": {"type": "string"},
+        "description": {
+          "oneOf": [
+            {
+              "type": "boolean",
+              "enum": [false]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "key": {"type": "string"},
+                "partner": {"type": "string"},
+                "interval": {"type": "string"},
+                "timestamp": {"type": "string"},
+                "status": {"type": "string"}
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

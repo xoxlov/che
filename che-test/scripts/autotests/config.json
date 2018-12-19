@@ -1,0 +1,21 @@
+{
+    "api": {
+        "url": "//api.che.test/v2",
+        "key": "yI99Kone4QHOuaPqmgpp7WoTmW0cDs"
+    },
+    "shop": {
+        "url": "//www.che.test/"
+    },
+    "laravel-api-config": {
+        "detectEnvironment": {
+            "env": "development"
+        }
+    },
+    "database": {
+        "host" : "dblocal.che.test",
+        "port" : 3306,
+        "username" : "chedb",
+        "password" : "Ohp8eiK4",
+        "database" : "cherehapa_funk"
+    }
+}

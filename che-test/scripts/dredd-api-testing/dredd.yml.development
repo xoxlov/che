@@ -1,0 +1,71 @@
+# ничего не делать
+dry-run: null
+# Array of Strings, filepaths to files containing hooks (can use glob wildcards)
+hookfiles: ./hooks.py
+# язык hook файлов
+language: python
+# используется толко для js хуков
+sandbox: false
+# команда запуска сервера на endpoint, null если не нужна.
+server: null
+# url по которому будет отвечать тестируемый сервер
+endpoint: 'http://api.che.dev/v2'
+# delay time in seconds between running a server and starting test.
+server-wait: 3
+# нужно ли запускать при старте интерактивную настройку этого файла (создает dredd.yml)
+init: false
+# Pass custom key-value configuration data delimited by a colon. E.g. -j 'a:b' , [default: []]
+custom: {}
+# Only list names of requests (for use in a hookfile). No requests are made. [default: false]
+names: false
+#Run only specified transaction name. Can be used multiple times [default: []], array of strings
+only: []
+# Output additional report format. This option can be used multiple times to add multiple reporters. 
+# Options: xunit, junit, nyan, dot, markdown, html, apiary.
+reporter: xunit
+#output file when using additional file-based reporter. This option can be used multiple times if multiple file-based reporters are used.
+output: ["./dredd-tests.xml"]
+#Extra header to include in every request. This option can be used multiple times to add multiple headers.
+header: ['key:dredd']
+# Sorts requests in a sensible way so that objects are not modified before they are created.
+# Order: CONNECT, OPTIONS, POST, GET, HEAD, PUT, PATCH, DELETE, TRACE.
+sorted: false
+#Basic Auth credentials in the form username:password.
+#user: apaherehc:9sBbOy6d
+# Determines whether failures and errors are displayed as they occur (true) or
+# aggregated and displayed at the end (false).
+inline-errors: false
+# Determines whether request/response details are included in passing tests.
+details: false
+# Restrict tests to a particular HTTP method (GET, PUT, POST, DELETE, PATCH). 
+# This option can be used multiple times to allow multiple methods.
+method: []
+# whether console output should include colors.
+color: false
+# не выводить ничего на консоль при запуске/работе
+silent: false
+# детализация логов
+level: info
+# указывать ли время в выводе в консоль
+timestamp: true
+# Additional blueprint paths or URLs. Can be used multiple times with glob pattern for paths. [default: []]
+# заданный путь предполагает что запуск dredd идет на каталог выше места куда скачаны apiblueprint'ы.
+path: [ "[A-Za-z0-9-]*/apiary.apib" ]
+# How long to wait for hooks worker to start (miliseconds).
+hooks-worker-timeout: 6000
+# How long to wait for hooks worker to acknowledge connection
+hooks-worker-connect-timeout: 4000
+# How long to wait between attempts to connect to hooks worker.
+hooks-worker-connect-retry: 500
+# How long to wait between connecting to hooks worker and start of testing.
+hooks-worker-after-connect-wait: 100
+# How long to wait between trying to terminate hooks worker and killing it.
+hooks-worker-term-timeout: 2000
+# How long to wait between attempts to terminate hooks worker. 
+hooks-worker-term-retry: 1500
+# Host of the hook worker. 
+hooks-worker-handler-host: localhost
+# Port of the hook worker.
+hooks-worker-handler-port: 61321
+# blueprint 
+blueprint: "02-API-Common/apiary.apib"

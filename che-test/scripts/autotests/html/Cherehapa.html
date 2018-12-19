@@ -1,0 +1,3056 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://newpartners.che.test/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>Cherehapa</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="Content-Type" content="Content-Encoding:gzip">
+   <link rel="stylesheet" href="./Cherehapa_files/font-awesome.min.css">
+<style type="text/css">@charset "UTF-8";
+/* This file must have an underscore at the beginning for it to be imported */
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Main colors */
+/* select */
+/* checkbox */
+/* Fonts */
+/* Header */
+/* Mixins */
+.element::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff slick-image-url("ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: "./fonts/" "slick.eot";
+  src: "./fonts/" "slick.eot?#iefix" format("embedded-opentype"), "./fonts/" "slick.woff" format("woff"), "./fonts/" "slick.ttf" format("truetype"), "./fonts/" "slick.svg#slick" format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "\2190"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "\2192"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "\2192"; }
+    [dir="rtl"] .slick-next:before {
+      content: "\2190"; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "\2022";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
+.main_carousel {
+  background: transparent;
+  margin: 15px auto;
+  width: 94%; }
+  .main_carousel .slick-active .slick-cloned {
+    padding: 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 110px !important; }
+  .main_carousel .slick-track {
+    min-height: 35px; }
+  .main_carousel .slick-prev:before {
+    content: '\2B9C'; }
+  .main_carousel .slick-next:before {
+    content: '\2B9E'; }
+  .main_carousel .slick-prev:before,
+  .main_carousel .slick-next:before {
+    font-family: "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 30px;
+    color: #00a3b7;
+    opacity: 1; }
+  .main_carousel .slick-prev,
+  .main_carousel .slick-next {
+    height: 30px; }
+  .main_carousel .slick-slide {
+    padding: 5px;
+    height: 30px;
+    line-height: 30px; }
+    .main_carousel .slick-slide img {
+      display: inline-block;
+      max-width: 100%;
+      max-height: 28px; }
+</style><style type="text/css">/**
+ * React Select
+ * ============
+ * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+ * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+ * MIT License: https://github.com/JedWatson/react-select
+*/
+.Select {
+  position: relative;
+}
+.Select input::-webkit-contacts-auto-fill-button,
+.Select input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+.Select input::-ms-clear {
+  display: none !important;
+}
+.Select input::-ms-reveal {
+  display: none !important;
+}
+.Select,
+.Select div,
+.Select input,
+.Select span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Select.is-disabled .Select-arrow-zone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35;
+}
+.Select.is-disabled > .Select-control {
+  background-color: #f9f9f9;
+}
+.Select.is-disabled > .Select-control:hover {
+  box-shadow: none;
+}
+.Select.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  border-color: #b3b3b3 #ccc #d9d9d9;
+}
+.Select.is-open > .Select-control .Select-arrow {
+  top: -2px;
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+.Select.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+.Select.is-focused > .Select-control {
+  background: #fff;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(0, 126, 255, 0.1);
+  background: #fff;
+}
+.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+  padding-right: 42px;
+}
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #333;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:hover,
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  color: #007eff;
+  outline: none;
+  text-decoration: underline;
+}
+.Select.has-value.Select--single > .Select-control .Select-value a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value a.Select-value-label:focus {
+  background: #fff;
+}
+.Select.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select.is-open .Select-arrow,
+.Select .Select-arrow-zone:hover > .Select-arrow {
+  border-top-color: #666;
+}
+.Select.Select--rtl {
+  direction: rtl;
+  text-align: right;
+}
+.Select-control {
+  background-color: #fff;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.Select-control .Select-input:focus {
+  outline: none;
+  background: #fff;
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.Select-input > input {
+  width: 100%;
+  background: none transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  line-height: 17px;
+  /* For IE 8 compatibility */
+  padding: 8px 0 12px;
+  /* For IE 8 compatibility */
+  -webkit-appearance: none;
+}
+.is-focused .Select-input > input {
+  cursor: text;
+}
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+.Select-loading-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.Select-loading {
+  -webkit-animation: Select-animation-spin 400ms infinite linear;
+  -o-animation: Select-animation-spin 400ms infinite linear;
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.Select-clear-zone {
+  -webkit-animation: Select-animation-fadeIn 200ms;
+  -o-animation: Select-animation-fadeIn 200ms;
+  animation: Select-animation-fadeIn 200ms;
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px;
+}
+.Select-clear-zone:hover {
+  color: #D0021B;
+}
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+}
+.Select--multi .Select-clear-zone {
+  width: 17px;
+}
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px;
+}
+.Select--rtl .Select-arrow-zone {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+.Select-control > *:last-child {
+  padding-right: 5px;
+}
+.Select--multi .Select-multi-value-wrapper {
+  display: inline-block;
+}
+.Select .Select-aria-only {
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  float: left;
+}
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+.Select-option {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333;
+}
+.Select-option.is-focused {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  color: #333;
+}
+.Select-option.is-disabled {
+  color: #cccccc;
+  cursor: default;
+}
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+.Select--multi .Select-input {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+}
+.Select--multi.Select--rtl .Select-input {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.Select--multi.has-value .Select-input {
+  margin-left: 5px;
+}
+.Select--multi .Select-value {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  border-radius: 2px;
+  border: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border: 1px solid rgba(0, 126, 255, 0.24);
+  color: #007eff;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.Select--multi .Select-value-icon,
+.Select--multi .Select-value-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Select--multi .Select-value-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px;
+}
+.Select--multi a.Select-value-label {
+  color: #007eff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select--multi a.Select-value-label:hover {
+  text-decoration: underline;
+}
+.Select--multi .Select-value-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  padding: 1px 5px 3px;
+}
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: #d8eafd;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 113, 230, 0.08);
+  color: #0071e6;
+}
+.Select--multi .Select-value-icon:active {
+  background-color: #c2e0ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.24);
+}
+.Select--multi.Select--rtl .Select-value {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.Select--multi.Select--rtl .Select-value-icon {
+  border-right: none;
+  border-left: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-left: 1px solid rgba(0, 126, 255, 0.24);
+}
+.Select--multi.is-disabled .Select-value {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #333;
+}
+.Select--multi.is-disabled .Select-value-icon {
+  cursor: not-allowed;
+  border-right: 1px solid #e3e3e3;
+}
+.Select--multi.is-disabled .Select-value-icon:hover,
+.Select--multi.is-disabled .Select-value-icon:focus,
+.Select--multi.is-disabled .Select-value-icon:active {
+  background-color: #fcfcfc;
+}
+@keyframes Select-animation-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+</style><style type="text/css">.PresetDateRangePicker_panel {
+  padding: 0 22px 11px
+}
+.PresetDateRangePicker_button {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background: 0 0;
+  border: 2px solid #00a699;
+  color: #00a699;
+  padding: 4px 12px;
+  margin-right: 8px;
+  font: inherit;
+  font-weight: 700;
+  line-height: normal;
+  overflow: visible;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer
+}
+.PresetDateRangePicker_button:active {
+  outline: 0
+}
+.PresetDateRangePicker_button__selected {
+  color: #fff;
+  background: #00a699
+}
+.SingleDatePickerInput {
+  display: inline-block;
+  background-color: #fff
+}
+.SingleDatePickerInput__withBorder {
+  border: 1px solid #dbdbdb
+}
+.SingleDatePickerInput__rtl {
+  direction: rtl
+}
+.SingleDatePickerInput__disabled {
+  background-color: #f2f2f2
+}
+.SingleDatePickerInput__block {
+  display: block
+}
+.SingleDatePickerInput__showClearDate {
+  padding-right: 30px
+}
+.SingleDatePickerInput_clearDate {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.SingleDatePickerInput_clearDate__default:focus,
+.SingleDatePickerInput_clearDate__default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.SingleDatePickerInput_clearDate__small {
+  padding: 6px
+}
+.SingleDatePickerInput_clearDate__hide {
+  visibility: hidden
+}
+.SingleDatePickerInput_clearDate_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.SingleDatePickerInput_clearDate_svg__small {
+  height: 9px
+}
+.SingleDatePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.SingleDatePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.SingleDatePicker {
+  position: relative;
+  display: inline-block
+}
+.SingleDatePicker__block {
+  display: block
+}
+.SingleDatePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.SingleDatePicker_picker__rtl {
+  direction: rtl
+}
+.SingleDatePicker_picker__directionLeft {
+  left: 0
+}
+.SingleDatePicker_picker__directionRight {
+  right: 0
+}
+.SingleDatePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.SingleDatePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.SingleDatePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.SingleDatePicker_closeButton:focus,
+.SingleDatePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.SingleDatePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_buttonReset {
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_buttonReset:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_show {
+  width: 22px;
+  position: absolute;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  border-top: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight:hover {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topRight {
+  border-bottom: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight:hover {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topLeft {
+  border-bottom: 26px solid transparent;
+  border-left: 33px solid #00a699;
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft:hover {
+  border-left: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_showSpan {
+  color: #fff;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_showSpan__bottomRight {
+  bottom: 0;
+  right: -28px
+}
+.DayPickerKeyboardShortcuts_showSpan__topRight {
+  top: 1px;
+  right: -28px
+}
+.DayPickerKeyboardShortcuts_showSpan__topLeft {
+  top: 1px;
+  left: -28px
+}
+.DayPickerKeyboardShortcuts_panel {
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 22px;
+  margin: 33px
+}
+.DayPickerKeyboardShortcuts_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0
+}
+.DayPickerKeyboardShortcuts_list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_close:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_closeSvg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_closeSvg:focus,
+.DayPickerKeyboardShortcuts_closeSvg:hover {
+  fill: #82888a
+}
+.CalendarDay {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center
+}
+.CalendarDay:active {
+  outline: 0
+}
+.CalendarDay__defaultCursor {
+  cursor: default
+}
+.CalendarDay__default {
+  border: 1px solid #e4e7e7;
+  color: #565a5c;
+  background: #fff
+}
+.CalendarDay__default:hover {
+  background: #e4e7e7;
+  border: 1px double #e4e7e7;
+  color: inherit
+}
+.CalendarDay__hovered_offset {
+  background: #f4f5f5;
+  border: 1px double #e4e7e7;
+  color: inherit
+}
+.CalendarDay__outside {
+  border: 0;
+  background: #fff;
+  color: #565a5c
+}
+.CalendarDay__blocked_minimum_nights {
+  background: #fff;
+  border: 1px solid #eceeee;
+  color: #cacccd
+}
+.CalendarDay__blocked_minimum_nights:active,
+.CalendarDay__blocked_minimum_nights:hover {
+  background: #fff;
+  color: #cacccd
+}
+.CalendarDay__highlighted_calendar {
+  background: #ffe8bc;
+  color: #565a5c
+}
+.CalendarDay__highlighted_calendar:active,
+.CalendarDay__highlighted_calendar:hover {
+  background: #ffce71;
+  color: #565a5c
+}
+.CalendarDay__selected_span {
+  background: #66e2da;
+  border: 1px solid #33dacd;
+  color: #fff
+}
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover {
+  background: #33dacd;
+  border: 1px solid #33dacd;
+  color: #fff
+}
+.CalendarDay__last_in_range {
+  border-right: #00a699
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: #00a699;
+  border: 1px solid #00a699;
+  color: #fff
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+  background: #b2f1ec;
+  border: 1px solid #80e8e0;
+  color: #007a87
+}
+.CalendarDay__hovered_span:active {
+  background: #80e8e0;
+  border: 1px solid #80e8e0;
+  color: #007a87
+}
+.CalendarDay__blocked_calendar,
+.CalendarDay__blocked_calendar:active,
+.CalendarDay__blocked_calendar:hover {
+  background: #cacccd;
+  border: 1px solid #cacccd;
+  color: #82888a
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:active,
+.CalendarDay__blocked_out_of_range:hover {
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  color: #cacccd
+}
+.CalendarMonth {
+  background: #fff;
+  text-align: center;
+  padding: 0 13px;
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.CalendarMonth_table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.CalendarMonth_verticalSpacing {
+  border-collapse: separate
+}
+.CalendarMonth_caption {
+  color: #565a5c;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 37px;
+  caption-side: initial
+}
+.CalendarMonth_caption__verticalScrollable {
+  padding-top: 12px;
+  padding-bottom: 7px
+}
+.CalendarMonthGrid {
+  background: #fff;
+  text-align: left;
+  z-index: 0
+}
+.CalendarMonthGrid__animating {
+  z-index: 1
+}
+.CalendarMonthGrid__horizontal {
+  position: absolute;
+  left: 9px
+}
+.CalendarMonthGrid__vertical {
+  margin: 0 auto
+}
+.CalendarMonthGrid__vertical_scrollable {
+  margin: 0 auto;
+  overflow-y: scroll
+}
+.CalendarMonthGrid_month__horizontal {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100%
+}
+.CalendarMonthGrid_month__hideForAnimation {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none
+}
+.CalendarMonthGrid_month__hidden {
+  visibility: hidden
+}
+.DayPickerNavigation_container {
+  position: relative;
+  z-index: 2
+}
+.DayPickerNavigation_container__vertical {
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  width: 100%
+}
+.DayPickerNavigation_container__verticalScrollable {
+  position: relative
+}
+.DayPickerNavigation_button {
+  cursor: pointer;
+  line-height: .78;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.DayPickerNavigation_button__default {
+  border: 1px solid #e4e7e7;
+  background-color: #fff;
+  color: #757575
+}
+.DayPickerNavigation_button__default:focus,
+.DayPickerNavigation_button__default:hover {
+  border: 1px solid #c4c4c4
+}
+.DayPickerNavigation_button__default:active {
+  background: #f2f2f2
+}
+.DayPickerNavigation_button__horizontal {
+  border-radius: 3px;
+  padding: 6px 9px;
+  top: 18px;
+  position: absolute
+}
+.DayPickerNavigation_leftButton__horizontal {
+  left: 22px
+}
+.DayPickerNavigation_rightButton__horizontal {
+  right: 22px
+}
+.DayPickerNavigation_button__vertical {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 50%
+}
+.DayPickerNavigation_button__vertical__default {
+  padding: 5px
+}
+.DayPickerNavigation_nextButton__vertical__default {
+  border-left: 0
+}
+.DayPickerNavigation_nextButton__verticalScrollable {
+  width: 100%
+}
+.DayPickerNavigation_svg__horizontal {
+  height: 19px;
+  width: 19px;
+  fill: #82888a
+}
+.DayPickerNavigation_svg__vertical {
+  height: 42px;
+  width: 42px;
+  fill: #565a5c
+}
+.DayPicker {
+  background: #fff;
+  position: relative;
+  text-align: left
+}
+.DayPicker__horizontal {
+  background: #fff
+}
+.DayPicker__verticalScrollable {
+  height: 100%
+}
+.DayPicker__hidden {
+  visibility: hidden
+}
+.DayPicker__withBorder {
+  box-shadow: 0 2px 6px rgba(0,0,0,.05),0 0 0 1px rgba(0,0,0,.07);
+  border-radius: 3px
+}
+.DayPicker_portal__horizontal {
+  box-shadow: none;
+  position: absolute;
+  left: 50%;
+  top: 50%
+}
+.DayPicker_portal__vertical {
+  position: initial
+}
+.DayPicker_focusRegion {
+  outline: 0
+}
+.DayPicker_calendarInfo__horizontal,
+.DayPicker_wrapper__horizontal {
+  display: inline-block;
+  vertical-align: top
+}
+.DayPicker_weekHeaders {
+  position: relative
+}
+.DayPicker_weekHeaders__horizontal {
+  margin-left: 9px
+}
+.DayPicker_weekHeader {
+  color: #757575;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  padding: 0 13px;
+  text-align: left
+}
+.DayPicker_weekHeader__vertical {
+  left: 50%
+}
+.DayPicker_weekHeader__verticalScrollable {
+  top: 0;
+  display: table-row;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fff;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  text-align: center
+}
+.DayPicker_weekHeader_ul {
+  list-style: none;
+  margin: 1px 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px
+}
+.DayPicker_weekHeader_li {
+  display: inline-block;
+  text-align: center
+}
+.DayPicker_transitionContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px
+}
+.DayPicker_transitionContainer__horizontal {
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out
+}
+.DayPicker_transitionContainer__vertical {
+  width: 100%
+}
+.DayPicker_transitionContainer__verticalScrollable {
+  padding-top: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll
+}
+.DateInput {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle
+}
+.DateInput__small {
+  width: 90px
+}
+.DateInput__block {
+  width: 100%
+}
+.DateInput__disabled {
+  background: #f2f2f2;
+  color: #dbdbdb
+}
+.DateInput_input {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  color: #565a5c;
+  background-color: #fff;
+  width: 100%;
+  padding: 13px 12px 11px;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 0
+}
+.DateInput_input__small {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 8px 8px 6px
+}
+.DateInput_input__regular {
+  font-weight: auto
+}
+.DateInput_input__readOnly {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.DateInput_input__focused {
+  outline: 0;
+  background: #fff;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #008489;
+  border-left: 0
+}
+.DateInput_input__disabled {
+  background: #f2f2f2;
+  font-style: italic
+}
+.DateInput_screenReaderMessage {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+.DateInput_fang {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 22px;
+  z-index: 2
+}
+.DateInput_fangShape {
+  fill: #fff
+}
+.DateInput_fangStroke {
+  stroke: #dbdbdb;
+  fill: transparent
+}
+.DateRangePickerInput {
+  background-color: #fff;
+  display: inline-block
+}
+.DateRangePickerInput__disabled {
+  background: #f2f2f2
+}
+.DateRangePickerInput__withBorder {
+  border: 1px solid #cacccd
+}
+.DateRangePickerInput__rtl {
+  direction: rtl
+}
+.DateRangePickerInput__block {
+  display: block
+}
+.DateRangePickerInput__showClearDates {
+  padding-right: 30px
+}
+.DateRangePickerInput_arrow {
+  display: inline-block;
+  vertical-align: middle
+}
+.DateRangePickerInput_arrow_svg {
+  vertical-align: middle;
+  fill: #565a5c;
+  height: 24px;
+  width: 24px
+}
+.DateRangePickerInput_arrow_svg__small {
+  height: 19px;
+  width: 19px
+}
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.DateRangePickerInput_clearDates__small {
+  padding: 6px
+}
+.DateRangePickerInput_clearDates_default:focus,
+.DateRangePickerInput_clearDates_default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.DateRangePickerInput_clearDates__hide {
+  visibility: hidden
+}
+.DateRangePickerInput_clearDates_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.DateRangePickerInput_clearDates_svg__small {
+  height: 9px
+}
+.DateRangePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.DateRangePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.DateRangePicker {
+  position: relative;
+  display: inline-block
+}
+.DateRangePicker__block {
+  display: block
+}
+.DateRangePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.DateRangePicker_picker__rtl {
+  direction: rtl
+}
+.DateRangePicker_picker__directionLeft {
+  left: 0
+}
+.DateRangePicker_picker__directionRight {
+  right: 0
+}
+.DateRangePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.DateRangePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.DateRangePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.DateRangePicker_closeButton:focus,
+.DateRangePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.DateRangePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}</style><style type="text/css">@charset "UTF-8";
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* This file must have an underscore at the beginning for it to be imported */
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Main colors */
+/* select */
+/* checkbox */
+/* Fonts */
+/* Header */
+/* Mixins */
+.element::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* This file must have an underscore at the beginning for it to be imported */
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Main colors */
+/* select */
+/* checkbox */
+/* Fonts */
+/* Header */
+/* Mixins */
+.element::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* This file must have an underscore at the beginning for it to be imported */
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Main colors */
+/* select */
+/* checkbox */
+/* Fonts */
+/* Header */
+/* Mixins */
+.element::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.SingleDatePicker {
+  width: 100%;
+  border: none; }
+  .SingleDatePicker .SingleDatePicker__picker,
+  .SingleDatePicker .SingleDatePicker_picker {
+    font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+  .SingleDatePicker .SingleDatePickerInput {
+    width: 100%;
+    height: 40px;
+    background: transparent; }
+  .SingleDatePicker .DateInput {
+    background: transparent;
+    width: 100%;
+    padding: 0; }
+  .SingleDatePicker .DateInput_input {
+    padding: 8px 15px 7px 15px;
+    font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+    background: #fff url("//static.che.test/i/latest/mobile/date.svg") no-repeat 98% 3px;
+    background-size: 30px 30px;
+    color: #333333; }
+  .SingleDatePicker .DateInput__with_caret::before,
+  .SingleDatePicker .DateInput__with_caret::after {
+    display: none; }
+  .SingleDatePicker .DateInput__disabled {
+    opacity: 0.5;
+    background: transparent; }
+  .SingleDatePicker .DateInput__display_text {
+    padding: 6px 5px 6px 40px;
+    background: transparent url("//cdn.cherehapa.ru/i/latest/mobile/date.svg") no-repeat 1% 0;
+    background-size: 35px 26px;
+    color: #a3a3a3; }
+    .SingleDatePicker .DateInput__display_text.DateInput__display-text__has_input {
+      color: #2baac2; }
+      .SingleDatePicker .DateInput__display_text.DateInput__display-text__has_input.DateInput__display-text__focused {
+        color: #333333;
+        border: none; }
+  .SingleDatePicker .DateInput_input__focused {
+    border: 2px solid #00a3b7; }
+  .SingleDatePicker .SingleDatePickerInput__clear_date {
+    padding: 0; }
+  .SingleDatePicker .CalendarDay {
+    border: none;
+    position: relative;
+    height: 32px;
+    color: #333333;
+    font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+    .SingleDatePicker .CalendarDay.CalendarDay__blocked_out_of_range {
+      color: #8c8c8c; }
+  .SingleDatePicker .CalendarDay__selected_start,
+  .SingleDatePicker .CalendarDay__selected_end,
+  .SingleDatePicker .CalendarDay__selected {
+    background: #fff;
+    border: none;
+    z-index: 1; }
+  .SingleDatePicker .CalendarDay__selected_start:after,
+  .SingleDatePicker .CalendarDay__selected_end:after,
+  .SingleDatePicker .CalendarDay__selected:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -18px;
+    width: 36px;
+    height: 24px;
+    background: #ffd500;
+    border-radius: 15px; }
+  .SingleDatePicker .CalendarDay__hovered,
+  .SingleDatePicker .CalendarDay__default:hover {
+    background: transparent; }
+  .SingleDatePicker .DayPickerNavigation__prev__default,
+  .SingleDatePicker .DayPickerNavigation__next__default,
+  .SingleDatePicker .DayPickerNavigation_button__default {
+    border: none; }
+    .SingleDatePicker .DayPickerNavigation__prev__default:focus,
+    .SingleDatePicker .DayPickerNavigation__next__default:focus,
+    .SingleDatePicker .DayPickerNavigation_button__default:focus {
+      outline: none; }
+  .SingleDatePicker .DayPickerNavigation__prev__default:active,
+  .SingleDatePicker .DayPickerNavigation__next__default:active,
+  .SingleDatePicker .DayPickerNavigation_button__default:active {
+    background: #bceff5; }
+  .SingleDatePicker .DayPickerNavigation__horizontal .DayPickerNavigation__prev__default svg,
+  .SingleDatePicker .DayPickerNavigation__horizontal .DayPickerNavigation__next__default svg,
+  .SingleDatePicker .DayPickerNavigation_button svg {
+    fill: #333333; }
+  .SingleDatePicker .DayPicker__week_header,
+  .SingleDatePicker .DayPicker_weekHeader {
+    font: 1em/120% "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+    top: 55px;
+    color: #00a3b7; }
+    .SingleDatePicker .DayPicker__week_header small,
+    .SingleDatePicker .DayPicker_weekHeader small {
+      font-size: 18px; }
+  .SingleDatePicker .DayPicker__horizontal {
+    box-shadow: 0 0 21px rgba(24, 172, 190, 0.3);
+    border-radius: 0  0 5px 5px; }
+  .SingleDatePicker .CalendarMonth__caption,
+  .SingleDatePicker .CalendarMonth_caption {
+    color: #333333;
+    font: 18px/120% "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+    margin-bottom: 10px; }
+  .SingleDatePicker .DateInput_screenReaderMessage,
+  .SingleDatePicker .DateInput_fang {
+    display: none; }
+
+.cherehapa-dates {
+  position: relative; }
+  .cherehapa-dates::after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.date-picker-wrap {
+  position: relative;
+  min-width: 175px;
+  margin: 0 10px 5px 0;
+  border-radius: 15px;
+  float: left;
+  width: 48%; }
+  .date-picker-wrap:nth-child(2n) {
+    margin-right: 0;
+    float: right; }
+
+.insured-days-info {
+  position: absolute;
+  bottom: -27px;
+  right: 12px;
+  width: 100%;
+  text-align: right;
+  color: #333333;
+  font: 18px/120% "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif; }
+
+/* This file must have an underscore at the beginning for it to be imported */
+@font-face {
+  font-family: 'PFSquareSansPro-Regular';
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProBold';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-boldwebfont.svg#PFSquareSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFSquareSansProMediumRegular';
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot");
+  src: url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.eot?#iefix") format("embedded-opentype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.woff") format("woff"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.ttf") format("truetype"), url("//cdn.cherehapa.ru/f/latest/pfsquaresanspro-mediumwebfont.svg#PFSquareSansProMediumRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Main colors */
+/* select */
+/* checkbox */
+/* Fonts */
+/* Header */
+/* Mixins */
+.element::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* стили react-select по умолчанию */
+.Select .Select-control {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  height: 33px; }
+
+.Select .Select-control:hover {
+  box-shadow: none; }
+
+.Select.Select--multi .Select-input {
+  margin-left: 5px;
+  font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+
+.Select.is-focused:not(.is-open) > .Select-control {
+  border: none;
+  box-shadow: none; }
+
+.Select .Select-value {
+  border: none;
+  color: #333333;
+  font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+
+.Select .Select-value-icon:hover,
+.Select .Select-value-icon:focus {
+  border: none;
+  background: none;
+  outline: none;
+  color: #2baac2; }
+
+.Select .Select-value-icon {
+  border: none;
+  float: right;
+  padding-top: 3px;
+  padding-left: 0; }
+
+.Select .Select-value-label {
+  display: inline-block;
+  max-width: 140px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.Select .Select-arrow {
+  background: transparent url("//cdn.cherehapa.ru/i/latest/mobile/down.svg") no-repeat 1% 0;
+  background-size: 10px 6px;
+  border: none;
+  width: 10px;
+  height: 6px; }
+
+.Select.is-open .Select-arrow {
+  top: 0;
+  background-image: url("//cdn.cherehapa.ru/i/latest/mobile/up.svg"); }
+
+.Select .Select-option {
+  color: #333333;
+  font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+  .Select .Select-option.is-selected {
+    background-color: #2baac2;
+    color: #fff; }
+  .Select .Select-option.is-focused {
+    background-color: #BCEFF5;
+    color: #333333; }
+
+.Select .Select-menu-outer {
+  margin-top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 21px rgba(24, 172, 190, 0.3); }
+
+.Select .Select-placeholder {
+  color: #a3a3a3;
+  padding-top: 8px;
+  font: 1.125em/120% "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif; }
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: #2baac2; }
+
+.magicCountry .Select-control {
+  width: 100%;
+  padding: 0 0 2px;
+  border-radius: 15px; }
+
+.magicCountry .Select-placeholder, .magicCountry .Select--single > .Select-control .Select-value {
+  padding-left: 15px; }
+
+.magicCountry .Select-value {
+  background-color: #BCEFF5;
+  border-radius: 15px; }
+
+.magicCountry .Select-arrow-zone {
+  vertical-align: middle; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#mainPage > div {
+  min-width: 1024px;
+  height: auto; }
+
+header {
+  position: relative;
+  width: 100%;
+  height: 90px; }
+  header.vzr {
+    color: #2baac2; }
+    header.vzr nav {
+      background: url("//static.che.test/i/latest/vzr/header_vzr_bg.png") no-repeat 100% 100%; }
+      header.vzr nav a {
+        color: #2baac2; }
+        header.vzr nav a:after {
+          background-color: #2baac2; }
+  header.osago {
+    color: #ffe605; }
+    header.osago nav {
+      background: url("//static.che.test/i/latest/vzr/header_osago_bg.png") no-repeat 100% 100%; }
+      header.osago nav a {
+        color: #ffe605; }
+        header.osago nav a:after {
+          background-color: #ffe605; }
+  header .logo {
+    position: absolute;
+    left: 26px;
+    top: 14px;
+    width: 212px;
+    height: 59px; }
+  header nav {
+    display: inline-block;
+    background-size: 650px 90px;
+    position: absolute;
+    right: 0;
+    width: 650px;
+    height: 90px; }
+    header nav ul {
+      margin-top: 14px;
+      margin-left: 35px; }
+      header nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 18px; }
+        header nav ul li:last-child {
+          margin-left: 26px;
+          margin-right: 0;
+          font-size: 19px; }
+          header nav ul li:last-child > a:after {
+            display: none; }
+        header nav ul li a {
+          text-decoration: none;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+          line-height: normal;
+          font-size: 16px;
+          font-weight: 600;
+          position: relative; }
+          header nav ul li a:after {
+            content: " ";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: inline-block;
+            width: 20px;
+            height: 2px; }
+
+.page-switch {
+  max-width: 1400px;
+  margin: 0 auto; }
+  .page-switch .wrapper {
+    max-width: 488px;
+    height: 85px;
+    margin: 0 auto;
+    position: relative; }
+    .page-switch .wrapper .page-travel {
+      display: inline-block;
+      width: 213px;
+      height: 85px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      cursor: pointer; }
+      .page-switch .wrapper .page-travel.switched-on {
+        background: url("//static.che.test/i/latest/vzr/page_travel_on.png") no-repeat 100% 100%; }
+      .page-switch .wrapper .page-travel.switched-off {
+        background: url("//static.che.test/i/latest/vzr/page_travel_off.png") no-repeat 100% 100%; }
+      .page-switch .wrapper .page-travel div {
+        display: block;
+        margin-top: 45px;
+        text-align: center;
+        color: #2baac2;
+        font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 20px;
+        line-height: normal;
+        text-transform: uppercase;
+        font-weight: 600; }
+    .page-switch .wrapper .page-auto {
+      display: inline-block;
+      width: 135px;
+      height: 70px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      cursor: pointer; }
+      .page-switch .wrapper .page-auto.switched-on {
+        background: url("//static.che.test/i/latest/vzr/page_auto_on.png") no-repeat 100% 100%; }
+      .page-switch .wrapper .page-auto.switched-off {
+        background: url("//static.che.test/i/latest/vzr/page_auto_off.png") no-repeat 100% 100%; }
+      .page-switch .wrapper .page-auto div {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        color: #2baac2;
+        font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 20px;
+        line-height: normal;
+        text-transform: uppercase;
+        font-weight: 600; }
+
+.main-form {
+  background: #fff url("//static.che.test/i/latest/vzr/main_form_bg.png") no-repeat 100% 100%;
+  background-size: 100% auto; }
+  .main-form.vzr > div {
+    margin: 0 auto;
+    max-width: 760px;
+    padding-bottom: 40px; }
+    .main-form.vzr > div h1 {
+      font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #444;
+      font-weight: 400;
+      margin: 10px 0 30px 0; }
+    .main-form.vzr > div .countries-dates-target {
+      position: relative; }
+      .main-form.vzr > div .countries-dates-target .country-block {
+        display: inline-block;
+        width: 400px;
+        margin-right: 400px; }
+        .main-form.vzr > div .countries-dates-target .country-block .magicCountry {
+          border: 2px solid #2baac2;
+          border-radius: 15px; }
+          .main-form.vzr > div .countries-dates-target .country-block .magicCountry .Select-control {
+            cursor: pointer; }
+            .main-form.vzr > div .countries-dates-target .country-block .magicCountry .Select-control .Select-input input {
+              padding-left: 10px; }
+            .main-form.vzr > div .countries-dates-target .country-block .magicCountry .Select-control .Select-arrow-zone {
+              padding-right: 18px; }
+              .main-form.vzr > div .countries-dates-target .country-block .magicCountry .Select-control .Select-arrow-zone .Select-arrow {
+                width: 16px;
+                height: 8px;
+                background-size: 16px 8px; }
+            .main-form.vzr > div .countries-dates-target .country-block .magicCountry .Select-control .Select-placeholder {
+              font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+              font-weight: 400; }
+      .main-form.vzr > div .countries-dates-target .service-checkbox-wrap {
+        color: #444;
+        font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-top: 5px; }
+        .main-form.vzr > div .countries-dates-target .service-checkbox-wrap label span {
+          position: relative;
+          display: inline-block;
+          padding: 0 0 3px 25px;
+          margin-left: 2px; }
+          .main-form.vzr > div .countries-dates-target .service-checkbox-wrap label span:before {
+            content: "\2713";
+            width: 14px;
+            height: 14px;
+            line-height: 100%;
+            text-align: center;
+            position: absolute;
+            display: block;
+            background: #fff;
+            color: #fff;
+            border: 2px solid #2baac2;
+            border-radius: 2px;
+            left: 0;
+            top: 50%;
+            margin: -10px 5px 0 0;
+            box-sizing: border-box;
+            transition: all 100ms ease-in-out;
+            cursor: pointer; }
+        .main-form.vzr > div .countries-dates-target .service-checkbox-wrap label input {
+          display: none; }
+          .main-form.vzr > div .countries-dates-target .service-checkbox-wrap label input[type="checkbox"]:checked ~ span:before {
+            background: #2baac2; }
+      .main-form.vzr > div .countries-dates-target .cherehapa-dates {
+        width: 340px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .main-form.vzr > div .countries-dates-target .cherehapa-dates .date-picker-wrap {
+          min-width: 160px;
+          width: 160px;
+          margin: 0 20px 5px 0; }
+          .main-form.vzr > div .countries-dates-target .cherehapa-dates .date-picker-wrap:nth-child(2n) {
+            margin-right: 0; }
+          .main-form.vzr > div .countries-dates-target .cherehapa-dates .date-picker-wrap:nth-child(3n) {
+            margin: 2px 180px 5px 0; }
+          .main-form.vzr > div .countries-dates-target .cherehapa-dates .date-picker-wrap input {
+            border: 2px solid #2baac2;
+            border-radius: 15px;
+            padding: 8px 15px 7px 45px;
+            background: #fff url("//static.che.test/i/latest/mobile/date.svg") no-repeat 12% 3px;
+            background-size: 30px 30px;
+            font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+            font-weight: 400; }
+            .main-form.vzr > div .countries-dates-target .cherehapa-dates .date-picker-wrap input::placeholder {
+              color: #a3a3a3;
+              font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+              font-weight: 400;
+              padding: 8px 0 7px 0;
+              text-align: center; }
+        .main-form.vzr > div .countries-dates-target .cherehapa-dates .multipolicy-block label {
+          color: #444;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400; }
+          .main-form.vzr > div .countries-dates-target .cherehapa-dates .multipolicy-block label span {
+            position: relative;
+            display: inline-block;
+            padding: 0 0 3px 25px;
+            margin-left: 2px; }
+            .main-form.vzr > div .countries-dates-target .cherehapa-dates .multipolicy-block label span:before {
+              content: "\2713";
+              width: 14px;
+              height: 14px;
+              line-height: 100%;
+              text-align: center;
+              position: absolute;
+              display: block;
+              background: #fff;
+              color: #fff;
+              border: 2px solid #2baac2;
+              border-radius: 2px;
+              left: 0;
+              top: 50%;
+              margin: -10px 5px 0 0;
+              box-sizing: border-box;
+              transition: all 100ms ease-in-out;
+              cursor: pointer; }
+          .main-form.vzr > div .countries-dates-target .cherehapa-dates .multipolicy-block label input {
+            display: none; }
+            .main-form.vzr > div .countries-dates-target .cherehapa-dates .multipolicy-block label input[type="checkbox"]:checked ~ span:before {
+              background: #2baac2; }
+      .main-form.vzr > div .countries-dates-target .travel-target {
+        display: inline-block;
+        min-width: 400px;
+        margin-top: 3px; }
+        .main-form.vzr > div .countries-dates-target .travel-target .Select-control {
+          height: 40px;
+          border: 2px solid #2baac2;
+          border-radius: 15px;
+          cursor: pointer; }
+          .main-form.vzr > div .countries-dates-target .travel-target .Select-control .Select-input input {
+            padding-left: 5px; }
+          .main-form.vzr > div .countries-dates-target .travel-target .Select-control .Select-arrow-zone {
+            padding-right: 18px; }
+            .main-form.vzr > div .countries-dates-target .travel-target .Select-control .Select-arrow-zone .Select-arrow {
+              width: 16px;
+              height: 8px;
+              background-size: 16px 8px; }
+          .main-form.vzr > div .countries-dates-target .travel-target .Select-control .Select-value-label {
+            font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+            font-weight: 400;
+            color: #333333;
+            max-width: 100%;
+            margin: 2px 0 0 5px; }
+    .main-form.vzr > div .tourists-main-wrapper {
+      display: block;
+      width: 100%;
+      margin-top: 20px; }
+      .main-form.vzr > div .tourists-main-wrapper .tourist-wrap {
+        width: 136px;
+        display: inline-block;
+        margin-left: 20px;
+        position: relative; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap:first-child {
+          margin-left: 0; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap:nth-child(6) {
+          margin-left: 0; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap:nth-last-child(2) {
+          margin-right: 4px; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap:nth-child(5) {
+          margin-right: 0; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap:nth-child(10) {
+          margin-right: 0; }
+        .main-form.vzr > div .tourists-main-wrapper .tourist-wrap .Select-control {
+          border: 2px solid #41abc2;
+          border-radius: 15px;
+          height: 40px;
+          background: transparent url(//static.che.test/i/latest/vzr/passenger.svg) no-repeat 14px 5px;
+          background-size: 20px 26px;
+          cursor: pointer;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+          color: #444;
+          font-size: 18px; }
+          .main-form.vzr > div .tourists-main-wrapper .tourist-wrap .Select-control .Select-value {
+            text-align: center; }
+            .main-form.vzr > div .tourists-main-wrapper .tourist-wrap .Select-control .Select-value .Select-value-label {
+              font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+              font-weight: 400;
+              color: #333333;
+              max-width: 100%;
+              margin: 2px 0 0 0; }
+          .main-form.vzr > div .tourists-main-wrapper .tourist-wrap .Select-control .Select-input input {
+            padding-left: 27px; }
+          .main-form.vzr > div .tourists-main-wrapper .tourist-wrap .Select-control .Select-arrow-zone {
+            display: none; }
+      .main-form.vzr > div .tourists-main-wrapper .increase-tourists {
+        background: transparent url("//static.che.test/i/latest/vzr/passenger.svg") no-repeat 0px 0px;
+        background-size: 20px 26px;
+        display: inline-block;
+        width: 20px;
+        height: 32px;
+        border: none;
+        color: #41abc2;
+        align-items: initial;
+        margin: 8px 0 0 16px;
+        vertical-align: top;
+        position: relative;
+        outline: none;
+        cursor: pointer; }
+        .main-form.vzr > div .tourists-main-wrapper .increase-tourists span {
+          position: absolute;
+          right: -14px;
+          font-size: 18px;
+          bottom: 2px;
+          line-height: 100%; }
+        .main-form.vzr > div .tourists-main-wrapper .increase-tourists:nth-child(11) {
+          display: none; }
+      .main-form.vzr > div .tourists-main-wrapper .tourist-delete {
+        background: transparent url("//static.che.test/i/latest/vzr/x.svg") no-repeat 0px 6px;
+        background-size: 8px 8px;
+        color: transparent;
+        position: absolute;
+        display: inline-block;
+        top: 10px;
+        right: 15px; }
+    .main-form.vzr > div .button-wrapper {
+      display: block;
+      text-align: center;
+      margin: 10px 0; }
+      .main-form.vzr > div .button-wrapper .submit-button {
+        display: inline-block;
+        background-color: #2baac2;
+        border-radius: 5px;
+        width: 196px;
+        height: 47px;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        font-family: "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+        padding: 6px 56px;
+        text-decoration: none; }
+  .main-form.osago > div {
+    margin: 0 auto;
+    max-width: 760px;
+    padding-bottom: 40px;
+    position: relative; }
+    .main-form.osago > div h1 {
+      font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #444;
+      font-weight: 400;
+      margin: 10px 0 30px 0; }
+    .main-form.osago > div > div {
+      position: relative;
+      width: 410px;
+      height: 50px;
+      display: inline-block; }
+      .main-form.osago > div > div input {
+        border: 2px solid #2baac2;
+        border-radius: 15px;
+        height: 50px;
+        outline: none;
+        position: absolute;
+        font-size: 24px;
+        line-height: 28px;
+        color: #999;
+        padding: 0 15px; }
+        .main-form.osago > div > div input::placeholder {
+          text-align: center; }
+        .main-form.osago > div > div input:first-child {
+          width: 290px;
+          left: 0;
+          z-index: 10;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        .main-form.osago > div > div input:last-child {
+          width: 122px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          right: 0; }
+    .main-form.osago > div .auth-esia {
+      display: inline-block;
+      padding: 8px 10px;
+      margin-left: 20px;
+      border-radius: 15px;
+      background-color: #2baac2;
+      font-family: "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      position: absolute;
+      top: 65px; }
+    .main-form.osago > div .submit-button {
+      display: block;
+      margin: 36px auto 10px auto;
+      background-color: #ffe605;
+      border-radius: 5px;
+      width: 196px;
+      height: 47px;
+      color: #444;
+      text-align: center;
+      font-size: 30px;
+      font-family: "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+      padding: 6px 56px;
+      text-decoration: none; }
+
+.carousel .slick-prev:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: #fff url("//static.che.test/i/latest/vzr/arrow.svg") no-repeat 100% 100%;
+  background-size: 20px 30px;
+  cursor: pointer; }
+
+.carousel .slick-next:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: #fff url("//static.che.test/i/latest/vzr/arrow.svg") no-repeat 100% 100%;
+  background-size: 20px 30px;
+  cursor: pointer;
+  transform: rotate(180deg); }
+
+.description.vzr .description-top {
+  position: relative;
+  background: url("//static.che.test/i/latest/vzr/description_bg_top.png") no-repeat 100% 100%;
+  background-size: 100% auto;
+  width: 100%;
+  height: 145px;
+  margin-top: 100px; }
+  .description.vzr .description-top div {
+    width: 225px;
+    color: #000;
+    font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: -60px;
+    right: 250px; }
+    .description.vzr .description-top div:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: -60px;
+      width: 45px;
+      height: 35px;
+      background: url("//static.che.test/i/latest/vzr/bg_top_arrow.png") no-repeat 100% 100%;
+      background-size: 45px 35px; }
+
+.description.vzr .description-body {
+  background-color: #ffe605;
+  position: relative; }
+  .description.vzr .description-body .center-1024 {
+    margin: 0 auto;
+    width: 1024px; }
+    .description.vzr .description-body .center-1024 .text-container {
+      display: inline-block;
+      width: 600px;
+      position: relative;
+      margin-left: 400px; }
+      .description.vzr .description-body .center-1024 .text-container div {
+        color: #333333;
+        margin-bottom: 23px; }
+        .description.vzr .description-body .center-1024 .text-container div h2 {
+          font-size: 24px;
+          line-height: 28px;
+          font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+          font-weight: 400;
+          margin-bottom: 5px; }
+        .description.vzr .description-body .center-1024 .text-container div p {
+          font-size: 17px;
+          line-height: 20px;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif; }
+      .description.vzr .description-body .center-1024 .text-container:first-child {
+        position: relative; }
+        .description.vzr .description-body .center-1024 .text-container:first-child:before {
+          content: "";
+          background: url("//static.che.test/i/latest/vzr/description_arrow.png") no-repeat 100% 100%;
+          background-size: 36px 148px;
+          position: absolute;
+          top: 30px;
+          left: -45px;
+          display: inline-block;
+          width: 36px;
+          height: 148px; }
+    .description.vzr .description-body .center-1024:before {
+      content: "";
+      background: url("//static.che.test/i/latest/vzr/che_map.png") no-repeat 100% 100%;
+      background-size: 342px 583px;
+      display: inline-block;
+      position: absolute;
+      top: -185px;
+      width: 342px;
+      height: 583px; }
+
+.description.vzr .description-bottom {
+  background: url("//static.che.test/i/latest/vzr/description_bg_bottom.png") no-repeat 100% 0%;
+  background-size: 100% auto;
+  width: 100%;
+  height: 65px; }
+
+.description.osago .description-top {
+  position: relative;
+  background: url("//static.che.test/i/latest/vzr/description_bg_top_osago.png") no-repeat 100% 100%;
+  background-size: 100% auto;
+  width: 100%;
+  height: 145px;
+  margin-top: 100px; }
+  .description.osago .description-top div {
+    width: 225px;
+    color: #fff;
+    font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: -60px;
+    right: 250px; }
+    .description.osago .description-top div:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      right: -60px;
+      width: 45px;
+      height: 35px;
+      background: url("//static.che.test/i/latest/vzr/bg_top_arrow.png") no-repeat 100% 100%;
+      background-size: 45px 35px; }
+
+.description.osago .description-body {
+  background-color: #40a5b7;
+  position: relative; }
+  .description.osago .description-body .center-1024 {
+    margin: 0 auto;
+    width: 1024px; }
+    .description.osago .description-body .center-1024 .text-container {
+      display: inline-block;
+      width: 600px;
+      position: relative;
+      margin-left: 400px; }
+      .description.osago .description-body .center-1024 .text-container div {
+        color: #fff;
+        margin-bottom: 23px; }
+        .description.osago .description-body .center-1024 .text-container div h2 {
+          font-size: 24px;
+          line-height: 28px;
+          font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+          font-weight: 400;
+          margin-bottom: 5px; }
+        .description.osago .description-body .center-1024 .text-container div p {
+          font-size: 17px;
+          line-height: 20px;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif; }
+      .description.osago .description-body .center-1024 .text-container:first-child {
+        position: relative; }
+        .description.osago .description-body .center-1024 .text-container:first-child:before {
+          content: "";
+          background: url("//static.che.test/i/latest/vzr/description_arrow_osago.png") no-repeat 100% 100%;
+          background-size: 37px 149px;
+          position: absolute;
+          top: 30px;
+          left: -45px;
+          display: inline-block;
+          width: 37px;
+          height: 149px; }
+    .description.osago .description-body .center-1024:before {
+      content: "";
+      background: url("//static.che.test/i/latest/vzr/che_description_osago.png") no-repeat 100% 100%;
+      background-size: 419px 593px;
+      display: inline-block;
+      position: absolute;
+      top: -185px;
+      width: 419px;
+      height: 593px; }
+
+.description.osago .description-bottom {
+  background: url("//static.che.test/i/latest/vzr/description_bg_bottom_osago.png") no-repeat 100% 0%;
+  background-size: 100% auto;
+  width: 100%;
+  height: 65px; }
+
+.video h2 {
+  margin: 0 0 50px 47px;
+  font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px; }
+
+.video.vzr .video-wrapper {
+  margin: 0 auto 100px auto;
+  width: 585px; }
+  .video.vzr .video-wrapper iframe {
+    border: 15px solid #40a5b7;
+    border-radius: 20px/10px; }
+
+.video.osago .video-wrapper {
+  margin: 0 auto 100px auto;
+  width: 585px; }
+  .video.osago .video-wrapper iframe {
+    border: 15px solid #ffe605;
+    border-radius: 20px/10px; }
+
+.testimonials {
+  position: relative; }
+  .testimonials.vzr .bg-top {
+    background: url("//static.che.test/i/latest/vzr/testimonials_bg_top.png") no-repeat 100% 100%;
+    background-size: 100% auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 100px; }
+  .testimonials.vzr .social {
+    background-color: #ffe605;
+    height: 80px; }
+    .testimonials.vzr .social h2 {
+      margin: 0 0 50px 47px;
+      font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      display: inline-block; }
+    .testimonials.vzr .social .icons-wrapper {
+      display: inline-block;
+      float: right;
+      margin-right: 60px; }
+      .testimonials.vzr .social .icons-wrapper a {
+        display: inline-block;
+        margin-left: 31px;
+        vertical-align: middle; }
+        .testimonials.vzr .social .icons-wrapper a.link-facebook {
+          width: 19px;
+          height: 35px;
+          background: url("//static.che.test/i/latest/vzr/icon_facebook.png") no-repeat 100% 100%;
+          background-size: 19px 35px; }
+        .testimonials.vzr .social .icons-wrapper a.link-instagram {
+          width: 34px;
+          height: 34px;
+          background: url("//static.che.test/i/latest/vzr/icon_instagram.png") no-repeat 100% 100%;
+          background-size: 34px; }
+        .testimonials.vzr .social .icons-wrapper a.link-vk {
+          width: 46px;
+          height: 26px;
+          background: url("//static.che.test/i/latest/vzr/icon_vk.png") no-repeat 100% 100%;
+          background-size: 46px 26px; }
+        .testimonials.vzr .social .icons-wrapper a.link-twitter {
+          width: 39px;
+          height: 32px;
+          background: url("//static.che.test/i/latest/vzr/icon_twitter.png") no-repeat 100% 100%;
+          background-size: 39px 32px; }
+        .testimonials.vzr .social .icons-wrapper a.link-ok {
+          width: 23px;
+          height: 36px;
+          background: url("//static.che.test/i/latest/vzr/icon_ok.png") no-repeat 100% 100%;
+          background-size: 23px 36px; }
+  .testimonials.vzr .testimonials {
+    background-color: #ffe605;
+    padding-top: 35px; }
+    .testimonials.vzr .testimonials .center-768 {
+      width: 768px;
+      height: 350px;
+      margin: 0 auto;
+      position: relative; }
+      .testimonials.vzr .testimonials .center-768 > span {
+        display: inline-block;
+        position: absolute;
+        top: -25px;
+        right: 125px;
+        width: 215px;
+        height: 60px;
+        font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+        text-align: right;
+        font-size: 18px;
+        color: #000;
+        background: url("//static.che.test/i/latest/vzr/testimonials_arrow.png") no-repeat 25% 80%;
+        background-size: 51px 26px; }
+      .testimonials.vzr .testimonials .center-768 > div {
+        width: 423px;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        color: #444;
+        position: absolute; }
+        .testimonials.vzr .testimonials .center-768 > div .text-container {
+          display: inherit;
+          width: 310px;
+          margin-top: 45px;
+          margin-left: 75px; }
+          .testimonials.vzr .testimonials .center-768 > div .text-container:last-child {
+            margin-top: 35px; }
+          .testimonials.vzr .testimonials .center-768 > div .text-container > div {
+            height: 30px; }
+            .testimonials.vzr .testimonials .center-768 > div .text-container > div .name {
+              font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+              float: left; }
+            .testimonials.vzr .testimonials .center-768 > div .text-container > div .date {
+              font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+              float: right;
+              opacity: 0.5; }
+          .testimonials.vzr .testimonials .center-768 > div .text-container p {
+            font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif; }
+      .testimonials.vzr .testimonials .center-768 .testimonial-1 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_large.png") no-repeat 100% 100%;
+        background-size: 423px 231px;
+        height: 231px;
+        top: 0; }
+      .testimonials.vzr .testimonials .center-768 .testimonial-2 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_large.png") no-repeat 100% 100%;
+        background-size: 423px 231px;
+        height: 231px;
+        right: 0;
+        top: 40px; }
+      .testimonials.vzr .testimonials .center-768 .testimonial-3 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_small.png") no-repeat 100% 100%;
+        background-size: 423px 146px;
+        height: 146px;
+        top: 190px;
+        left: 60px; }
+  .testimonials.vzr .bg-bottom {
+    background: url("//static.che.test/i/latest/vzr/testimonials_bg_bottom.png") no-repeat 50% 0;
+    background-size: auto 100%;
+    width: 100%;
+    height: 255px; }
+    .testimonials.vzr .bg-bottom div {
+      display: inline-block;
+      width: 212px;
+      height: 40px;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      font-weight: 600;
+      line-height: 100%;
+      position: absolute;
+      color: #444;
+      bottom: 115px;
+      right: 360px; }
+  .testimonials.osago .bg-top {
+    background: url("//static.che.test/i/latest/vzr/testimonials_bg_top_osago.png") no-repeat 100% 100%;
+    background-size: 100% auto;
+    width: 100%;
+    height: 30px;
+    margin-top: 100px; }
+  .testimonials.osago .social {
+    background-color: #40a5b7;
+    height: 80px; }
+    .testimonials.osago .social h2 {
+      margin: 0 0 50px 47px;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      display: inline-block;
+      color: #fff; }
+    .testimonials.osago .social .icons-wrapper {
+      display: inline-block;
+      float: right;
+      margin-right: 60px; }
+      .testimonials.osago .social .icons-wrapper a {
+        display: inline-block;
+        margin-left: 31px;
+        vertical-align: middle; }
+        .testimonials.osago .social .icons-wrapper a.link-facebook {
+          width: 19px;
+          height: 35px;
+          background: url("//static.che.test/i/latest/vzr/icon_facebook.png") no-repeat 100% 100%;
+          background-size: 19px 35px; }
+        .testimonials.osago .social .icons-wrapper a.link-instagram {
+          width: 34px;
+          height: 34px;
+          background: url("//static.che.test/i/latest/vzr/icon_instagram.png") no-repeat 100% 100%;
+          background-size: 34px; }
+        .testimonials.osago .social .icons-wrapper a.link-vk {
+          width: 46px;
+          height: 26px;
+          background: url("//static.che.test/i/latest/vzr/icon_vk.png") no-repeat 100% 100%;
+          background-size: 46px 26px; }
+        .testimonials.osago .social .icons-wrapper a.link-twitter {
+          width: 39px;
+          height: 32px;
+          background: url("//static.che.test/i/latest/vzr/icon_twitter.png") no-repeat 100% 100%;
+          background-size: 39px 32px; }
+        .testimonials.osago .social .icons-wrapper a.link-ok {
+          width: 23px;
+          height: 36px;
+          background: url("//static.che.test/i/latest/vzr/icon_ok.png") no-repeat 100% 100%;
+          background-size: 23px 36px; }
+  .testimonials.osago .testimonials {
+    background-color: #40a5b7;
+    padding-top: 35px; }
+    .testimonials.osago .testimonials .center-768 {
+      width: 768px;
+      height: 350px;
+      margin: 0 auto;
+      position: relative; }
+      .testimonials.osago .testimonials .center-768 > div {
+        width: 423px;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        color: #444;
+        position: absolute; }
+        .testimonials.osago .testimonials .center-768 > div .text-container {
+          display: inherit;
+          width: 310px;
+          margin-top: 45px;
+          margin-left: 75px; }
+          .testimonials.osago .testimonials .center-768 > div .text-container:last-child {
+            margin-top: 35px; }
+          .testimonials.osago .testimonials .center-768 > div .text-container > div {
+            height: 30px; }
+            .testimonials.osago .testimonials .center-768 > div .text-container > div .name {
+              font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+              float: left; }
+            .testimonials.osago .testimonials .center-768 > div .text-container > div .date {
+              font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+              float: right;
+              opacity: 0.5; }
+          .testimonials.osago .testimonials .center-768 > div .text-container p {
+            font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif; }
+      .testimonials.osago .testimonials .center-768 > span {
+        display: inline-block;
+        position: absolute;
+        top: -25px;
+        right: 125px;
+        width: 215px;
+        height: 60px;
+        font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+        text-align: right;
+        font-size: 18px;
+        color: #fff;
+        background: url("//static.che.test/i/latest/vzr/testimonials_arrow_osago.png") no-repeat 25% 80%;
+        background-size: 51px 26px; }
+      .testimonials.osago .testimonials .center-768 .testimonial-1 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_large_osago.png") no-repeat 100% 100%;
+        background-size: 423px 231px;
+        height: 231px;
+        top: 0; }
+      .testimonials.osago .testimonials .center-768 .testimonial-2 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_large_osago.png") no-repeat 100% 100%;
+        background-size: 423px 231px;
+        height: 231px;
+        right: 0;
+        top: 40px; }
+      .testimonials.osago .testimonials .center-768 .testimonial-3 {
+        background: url("//static.che.test/i/latest/vzr/testimonial_frame_small_osago.png") no-repeat 100% 100%;
+        background-size: 423px 146px;
+        height: 146px;
+        top: 190px;
+        left: 60px; }
+  .testimonials.osago .bg-bottom {
+    background: url("//static.che.test/i/latest/vzr/testimonials_bg_bottom_osago.png") no-repeat 50% 0;
+    background-size: auto 100%;
+    width: 100%;
+    height: 255px; }
+    .testimonials.osago .bg-bottom div {
+      display: inline-block;
+      width: 212px;
+      height: 40px;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      font-weight: 600;
+      line-height: 100%;
+      position: absolute;
+      color: #444;
+      bottom: 115px;
+      right: 360px; }
+
+.subscription-wrapper {
+  position: relative; }
+  .subscription-wrapper > div:first-child {
+    display: inline-block;
+    width: 415px;
+    height: 63px;
+    font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18px;
+    color: #444;
+    position: absolute;
+    top: -65px;
+    left: 220px;
+    background: url("//static.che.test/i/latest/vzr/subscription_arrow.png") no-repeat 35% 60%;
+    background-size: 81px 82px;
+    padding-bottom: 200px; }
+  .subscription-wrapper .subscription {
+    position: relative; }
+    .subscription-wrapper .subscription input {
+      border: 2px solid #2baac2;
+      border-radius: 20px;
+      display: block;
+      margin: 60px auto 30px auto;
+      width: 460px;
+      height: 40px;
+      text-align: center;
+      padding: 0 25px;
+      color: #999;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      line-height: 28px; }
+      .subscription-wrapper .subscription input:hover, .subscription-wrapper .subscription input:focus {
+        outline: none; }
+    .subscription-wrapper .subscription button {
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+      padding: 10px 24px;
+      background-color: #ffe605;
+      font-family: "PFSquareSansProBold", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 24px;
+      line-height: 28px;
+      color: #444;
+      text-align: center;
+      text-transform: lowercase;
+      border: none;
+      margin-bottom: 50px;
+      outline: none;
+      cursor: pointer; }
+    .subscription-wrapper .subscription div {
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      color: #333333;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 55px; }
+  .subscription-wrapper > div:last-child {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 24px;
+    color: #4d4d4d;
+    background: url("//static.che.test/i/latest/vzr/subscription_pointer.gif") no-repeat 50% 100%;
+    background-size: 17px 56px;
+    padding-bottom: 65px;
+    margin-bottom: -20px; }
+
+footer {
+  width: 100%;
+  position: relative; }
+  footer > img {
+    width: 184px;
+    height: 347px;
+    position: absolute;
+    left: 0;
+    top: -135px;
+    z-index: -1; }
+  footer.vzr {
+    background: url("//static.che.test/i/latest/vzr/footer_bg.png") no-repeat 85% 0;
+    background-size: auto 100%; }
+    footer.vzr .center-1000 {
+      margin: 0 auto;
+      width: 1000px;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      color: #fff;
+      padding: 100px 0 20px; }
+      footer.vzr .center-1000 .left-col {
+        float: left;
+        width: 48%;
+        margin: 0 10px; }
+      footer.vzr .center-1000 .right-col {
+        float: right;
+        width: 48%;
+        margin: 0 10px; }
+      footer.vzr .center-1000 .fullwidth-text {
+        position: relative; }
+        footer.vzr .center-1000 .fullwidth-text div {
+          width: 850px; }
+          footer.vzr .center-1000 .fullwidth-text div:after {
+            content: "";
+            width: 135px;
+            height: 135px;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: url("//static.che.test/i/latest/vzr/che_circle.png") no-repeat 100% 100%;
+            background-size: 135px; }
+      footer.vzr .center-1000 h2 {
+        margin-bottom: 10px;
+        font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400; }
+      footer.vzr .center-1000 p {
+        margin-bottom: 18px;
+        font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 16px;
+        line-height: 120%;
+        text-shadow: 0 -1px 0 #008090; }
+      footer.vzr .center-1000 .links {
+        margin-top: 50px; }
+        footer.vzr .center-1000 .links a {
+          color: #fff;
+          margin-right: 10px;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+          font-size: 16px;
+          line-height: 120%;
+          text-shadow: 0 -1px 0 #008090; }
+          footer.vzr .center-1000 .links a:hover {
+            text-decoration: none; }
+      footer.vzr .center-1000 .misc {
+        margin-top: 15px;
+        height: 60px; }
+        footer.vzr .center-1000 .misc img {
+          margin-right: 10px;
+          vertical-align: middle; }
+        footer.vzr .center-1000 .misc div:first-of-type {
+          width: 310px;
+          margin-right: 10px;
+          display: inline-block;
+          font-size: 14px;
+          line-height: 110%;
+          vertical-align: middle; }
+        footer.vzr .center-1000 .misc div:last-child {
+          width: 230px;
+          float: right;
+          margin-top: 14px; }
+  footer.osago {
+    background: url("//static.che.test/i/latest/vzr/footer_bg_osago.png") no-repeat 80% 0;
+    background-size: auto 100%; }
+    footer.osago .center-1000 {
+      margin: 0 auto;
+      width: 1000px;
+      font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+      color: #333333;
+      padding: 100px 0 20px; }
+      footer.osago .center-1000 .left-col {
+        float: left;
+        width: 48%;
+        margin: 0 10px; }
+      footer.osago .center-1000 .right-col {
+        float: right;
+        width: 48%;
+        margin: 0 10px; }
+      footer.osago .center-1000 .fullwidth-text {
+        position: relative; }
+        footer.osago .center-1000 .fullwidth-text div {
+          width: 850px; }
+          footer.osago .center-1000 .fullwidth-text div:after {
+            content: "";
+            width: 135px;
+            height: 135px;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: url("//static.che.test/i/latest/vzr/che_circle.png") no-repeat 100% 100%;
+            background-size: 135px; }
+      footer.osago .center-1000 h2 {
+        margin-bottom: 10px;
+        font-family: "PFSquareSansProMediumRegular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400; }
+      footer.osago .center-1000 p {
+        margin-bottom: 18px;
+        font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+        font-size: 16px;
+        line-height: 120%; }
+      footer.osago .center-1000 .links {
+        margin-top: 50px; }
+        footer.osago .center-1000 .links a {
+          color: #333333;
+          margin-right: 10px;
+          font-family: "PFSquareSansPro-Regular", Tahoma, Verdana, Segoe, sans-serif;
+          font-size: 16px;
+          line-height: 120%; }
+          footer.osago .center-1000 .links a:hover {
+            text-decoration: none; }
+      footer.osago .center-1000 .misc {
+        margin-top: 15px;
+        height: 60px; }
+        footer.osago .center-1000 .misc img {
+          margin-right: 10px;
+          vertical-align: middle; }
+        footer.osago .center-1000 .misc div:first-of-type {
+          width: 310px;
+          margin-right: 10px;
+          display: inline-block;
+          font-size: 14px;
+          line-height: 110%;
+          vertical-align: middle; }
+        footer.osago .center-1000 .misc div:last-child {
+          width: 230px;
+          float: right;
+          margin-top: 14px; }
+</style></head>
+<body class="">
+<div id="mainPage"><div><header class="osago"><div><img class="logo" src="./Cherehapa_files/header_logo.png" alt="Cherehapa моментальное страхование"><nav><ul><li><a href="http://newpartners.che.test/faq/">Вопросы и ответы</a></li><li><a href="http://newpartners.che.test/whatAndWhy/">Что и зачем страховать</a></li><li><a href="http://newpartners.che.test/contact/">Контакты</a></li><li><a href="http://newpartners.che.test/company/">О компании</a></li></ul><div><div><i class="fa fa-user" aria-hidden="true"></i></div></div></nav></div></header><section class="page-switch"><div class="wrapper"><div class="page-travel switched-off"><div>путешествие</div></div><div class="page-auto switched-on"><div>авто</div></div></div></section><section class="main-form osago"><div><h1>Электронный страховой полис ОСАГО</h1><div><input name="registrationNumber" value=""><input name="region" value=""></div><a href="http://newpartners.che.test/#" class="auth-esia">или авторизироваться через ЕСИА</a><a target="_blank" class="submit-button" disabled="">найти</a></div></section><section class="carousel"><div><div class="main_carousel"><div class="slick-initialized slick-slider"><button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;"> Previous</button><div class="slick-list"><div class="slick-track" style="opacity: 1; transform: translate3d(-1211px, 0px, 0px); width: 5709px;"><div data-index="-7" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/reso.png" alt=""></div><div data-index="-6" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/soglasie.png" alt=""></div><div data-index="-5" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/rstandart.png" alt=""></div><div data-index="-4" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/absolut.png" alt=""></div><div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/arsenal.png" alt=""></div><div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/sberbank.png" alt=""></div><div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/allianz.png" alt=""></div><div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/alfa.png" alt=""></div><div data-index="1" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/vtb.png" alt=""></div><div data-index="2" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/ingos.png" alt=""></div><div data-index="3" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/zetta.png" alt=""></div><div data-index="4" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/liberty.png" alt=""></div><div data-index="5" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/renins.png" alt=""></div><div data-index="6" class="slick-slide slick-active" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/reso.png" alt=""></div><div data-index="7" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/soglasie.png" alt=""></div><div data-index="8" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/rstandart.png" alt=""></div><div data-index="9" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/absolut.png" alt=""></div><div data-index="10" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/arsenal.png" alt=""></div><div data-index="11" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/sberbank.png" alt=""></div><div data-index="12" class="slick-slide" tabindex="-1" style="outline: none; width: 173px;"><img src="./Cherehapa_files/allianz.png" alt=""></div><div data-index="13" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/alfa.png" alt=""></div><div data-index="14" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/vtb.png" alt=""></div><div data-index="15" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/ingos.png" alt=""></div><div data-index="16" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/zetta.png" alt=""></div><div data-index="17" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/liberty.png" alt=""></div><div data-index="18" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/renins.png" alt=""></div><div data-index="19" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/reso.png" alt=""></div><div data-index="20" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/soglasie.png" alt=""></div><div data-index="21" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/rstandart.png" alt=""></div><div data-index="22" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/absolut.png" alt=""></div><div data-index="23" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/arsenal.png" alt=""></div><div data-index="24" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/sberbank.png" alt=""></div><div data-index="25" tabindex="-1" class="slick-slide slick-cloned" style="width: 173px;"><img src="./Cherehapa_files/allianz.png" alt=""></div></div></div><button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button></div></div></div></section><section class="description osago"><div><div class="description-top"><div>Лучшие страховые<br>компании — наши партнёры!</div></div><div class="description-body"><div class="center-1024"><div class="text-container"><div><h2>Зачем мне покупать страховку на cherehapa.ru?</h2><p>Мы уникальный сервис по сравнению условий страхования в крупнейших страховых компаниях. Мы переработали правила страхования всех страховых компаний и даем вам возможность выбрать лучшие условия страхования для своего путешествия удобным, понятным и простым способом.</p></div><div><h2>Как это работает?</h2><p>Выбирайте вариант страховки, оплачивайте удобным для вас способом, получите полис на email и просто распечатайте его. Электронный страховой полис принимается всеми визовыми центрами.</p></div><div><h2>Никаких переплат!</h2><p>Мы продаем полисы по действующим тарифам страховых компаний и даже дешевле, потому что мы лидеры на рынке электронного страхования, и страховые компании конкурируют между собой, чтобы привлечь клиентов.</p></div><div><h2>Честность превыше всего</h2><p>Наша цель – показать вам все условия страхования честно и открыто, сообщить о любых возможных ограничениях в условиях страхования, чтобы вы были уверены в своей страховке и понимали, на что можете рассчитывать. Для нас это действительно важно!</p></div></div></div></div><div class="description-bottom"></div></div></section><section class="video osago"><h2>Как пользоваться сайтом?</h2><div class="video-wrapper"><iframe width="560" height="315" src="./Cherehapa_files/xdKm-6SXO4k.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></section><section class="testimonials osago"><div class="bg-top"></div><div class="social"><h2>Где ещё обитает Черехапа?</h2><div class="icons-wrapper"><a href="http://newpartners.che.test/#facebook" class="link-facebook"></a><a href="http://newpartners.che.test/#instagram" class="link-instagram"></a><a href="http://newpartners.che.test/#vk" class="link-vk"></a><a href="http://newpartners.che.test/#twitter" class="link-twitter"></a><a href="http://newpartners.che.test/#ok" class="link-ok"></a></div></div><div class="testimonials"><div class="center-768"><div class="testimonial-1"><div class="text-container"><div><span class="name">Елена Щиголева</span><span class="date">30 октября</span></div><p>Заказывала полис для визы, но немного не рассчитала с датой... Написала в службу поддержки, очень оперативно исправили мне полис и выслали новый с датой, которую я попросила. Очень благодарна за помощь! Хороший сервис, буду ещё пользоваться как возникнет необходимость.</p></div></div><div class="testimonial-2"><div class="text-container"><div><span class="name">Ирина Петрова</span><span class="date">26 ноября</span></div><p>Долго изучала сайт, т.к. в первый раз. Наконец-то выбрала подходящую страховку, но при заказе совершила ошибку, непрвильно написала дату. Увидела только когда пришла страховка на почту. Написала письмо и тут же, буквально в течение 5 минут всё было исправлено! Большое спасибо!</p></div></div><div class="testimonial-3"><div class="text-container"><div><span class="name">Анна Митченко</span><span class="date">5 декабря</span></div><p>Благодарю вас за оформление страховки и очень быстрые ответы операторов. Удачи и всего самого хорошего :)</p></div></div><span>Всегда приятно читать ваши отзывы!</span></div></div><div class="bg-bottom"><div>Черехапа работает даже на другой стороне планеты</div></div></section><section class="subscription-wrapper"><div>Вы можете оставить адрес вашей электронной почты<br>здесь чтобы не пропускать интересные новости и<br>конкурсы от Че</div><div class="subscription"><input name="email" value=""><button class="submit-button">Подписаться</button></div><div>Много букв<br>для самых любознательных :)</div></section><footer class="osago"><img src="./Cherehapa_files/che_footer.png"><div class="center-1000 clearfix"><div class="left-col"><h2>Страховка за границу</h2><p><strong>Страхование</strong> — сложная услуга, и разобраться самому во всех тонкостях дело хлопотное и требующее значительного времени. Мы сделали это за вас. У нас на сайте вы можете сделать <strong>онлайн расчет</strong> стоимости страховки для поездки за границу сразу в нескольких крупнейших страховых компаниях и приобрести <strong>электронный полис</strong>. Онлайн страховка — это такой же страховой полис, как и купленный в офисе страховой компании или у агента. Страховка для выезда за границу включает страхование жизни и здоровья на время пребывания за границей. Вы можете дополнительно включить в свой полис: страхование багажа, страхование от несчастного случая, cтрахование ответственности, страхование имущества, страхование потери документов, невыезда и многое другое.<strong>Медицинская страховка</strong> для граждан, выезжающих за границу, — гарантия вашего комфортного отдыха. Онлайн страхование — быстро, удобно и просто.</p><h2>Какая страховая компания лучше?</h2><p>Мы предоставляем услуги крупнейших страховых компаний: Allianz, Liberty, АльфаСтрахование, АРСЕНАЛЪ, ВТБ Страхование, Зетта Страхование, Ингосстрах, Ренессанс, РЕСО, Русский Стандарт, СБЕРБАНК СТРАХОВАНИЕ, Согласие, Тинькофф Страхование. Мы работаем только с проверенными страховыми компаниями, которые предоставляют отличный сервис и следят за качеством обслуживания клиентов, поэтому вы&nbsp;можете быть уверены в своем выборе.</p></div><div class="right-col"><h2>Медицинская страховка для визы</h2><p>Собираете <strong>документы на визу</strong>? Скорее всего вам потребуется туристическая страховка. Даже, если вы едете в популярные безвизовые страны для россиян: Турция, Египет, Тунис, Вьетнам, Черногория, Доминикана, Мальдивы, <nobr>Шри-Ланка</nobr>, Таиланд, Марокко, Малайзия, Иордания, Камбоджа, Маврикий, Сейшелы и многие другие, мы советуем приобрести страхование жизни и здоровья, чтобы сделать ваш отдых максимально комфортным. Вы собрались на горнолыжные курорты Италии, на Канарские острова или в Китай, страховка будет полезным дополнением к вашему отдыху.</p><p>Вы уже знаете, как <strong>получить визу</strong> и какие нужны документы для визы? Неважно, какая требуется виза (туристическая, мульти-виза, бизнес-виза или срочная виза), вам понадобится не только анкета на визу, но и страховка выезжающих за рубеж. Мед страховка, также как анкета на визу — требование визовых центров, без неё нельзя получить визу. Если вам необходима <strong>шенгенская виза</strong>, то вам обязательно нужна <strong>страховка для шенгенской визы</strong>. Она должна включать минимальное покрытие на медицинское страхование 30 000 евро. Медицинская страховка для шенгенской визы вам необходима в страны: Австрия, Бельгия, Венгрия, Германия, Греция, Дания, Исландия, Испания, Италия, Латвия, Литва, Люксембург, Мальта, Нидерланды (Голландия), Норвегия, Польша, Португалия, Словакия, Словения, Финляндия, Франция, Чехия, Швейцария, Швеция, Эстония. Варианты туристических страховок на нашем сайте запрограммированы в калькулятор так, что они всегда удовлетворяют требованиям посольств для получения визы. Мы знаем все правила, внимательно следим за изменениями и учитываем их в нашем сервисе.</p></div><div class="clearfix"></div><div class="fullwidth-text"><div><h2>Кто такой Черехапа?</h2><p>Cherehapa — это онлайн сервис по выбору и покупке страховки для путешествия. Мы помогаем подобрать оптимальный вариант страхования, сравнить предложения крупнейших компаний и купить электронный полис за 7 минут. Мы знаем особенности поездок в разные страны и даем вам советы и подсказки.</p><p>Это образ, который совмещает в себе жизнелюбие, мобильность и уверенную защиту. Cherehapa не <strong>черепаха</strong> — это полная противоположность черепахе. Мы так же, как и вы, мобильны, активны, любим жизнь во всех ее проявлениях, открываем что-то новое и всегда готовы попробовать «на вкус» новые города, страны, острова и континенты.</p></div></div><div class="links"><a href="http://newpartners.che.test/#">Что и зачем страховать?</a><a href="http://newpartners.che.test/#">О компании</a><a href="http://newpartners.che.test/#">Контакты</a><a href="http://newpartners.che.test/#">Партнерская программа</a><a href="http://newpartners.che.test/#">Вопросы и ответы</a></div><div class="misc"><img src="./Cherehapa_files/verifiedvisa.png"><img src="./Cherehapa_files/verifiedmaster.png"><div>Передача данных производится с соблюдением всех необходимых современных мер безопасности.</div><img src="./Cherehapa_files/honor.png"><div>© 2012-2018<br>ООО «Черехапа страхование»</div></div></div></footer></div></div>
+<script src="./Cherehapa_files/mainPage.min.js"></script><div class="ReactModalPortal"></div>
+
+
+</body></html>

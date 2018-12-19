@@ -1,0 +1,225 @@
+{
+    "type": "object",
+    "required": ["status", "data", "task"],
+    "additionalProperties": true,
+    "properties": {
+        "status": {
+            "type": "number", "minimum": 200, "exclusiveMinimum": false, "maximum": 226, "exclusiveMaximum": false
+        },
+        "request": {
+            "type": "object",
+            "required": [
+                "dateStart", "dateEnd", "dateVisa", "insuredDays", "currencyId"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "dateStart": {"type": "string", "pattern": "[0-9]{2}.[0-9]{2}.[0-9]{4}"},
+                "dateEnd": {"type": "string", "pattern": "[0-9]{2}.[0-9]{2}.[0-9]{4}"},
+                "dateVisa": {
+                    "anyOf": [
+                        {"type": "string", "pattern": "[0-9]{2}.[0-9]{2}.[0-9]{4}"},
+                        {"type": "null"}
+                    ]
+                },
+                "insuredDays": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                "currencyId": {"type": "string"}
+            }
+        },
+        "policy": {
+            "type": "array",
+            "minitems": 1,
+            "items": {
+                "type": "object",
+                "required": [
+                    "id", "code", "companyId", "dateCreated", "dateConfirmed", "dateCancelled",
+                    "price", "fee", "type"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "id": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                    "code": {"type": "string"},
+                    "companyId": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                    "dateCreated": {
+                        "type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"
+                    },
+                    "dateConfirmed": {
+                        "anyOf": [
+                            {"type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                            {"type": "null"}
+                        ]
+                    },
+                    "dateCancelled": {
+                        "anyOf": [
+                            {"type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                            {"type": "null"}
+                        ]
+                    },
+                    "price": {"type": "number", "minimum": 0, "exclusiveMinimum": true},
+                    "fee": {"type": "number", "minimum": 0, "exclusiveMinimum": true},
+                    "type":{"type": "string",
+                        "oneOf": [{"enum": ["travel", "avia"]}]
+                    }
+                }
+            }
+        },
+        "data": {
+            "type": "array", "minitems": 1,
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "additionalProperties": true,
+                        "properties": {
+                            "assistance": {
+                                "type": "array", "minitems": 1,
+                                "items": {
+                                    "type": "object",
+                                    "minProperties": 1,
+                                    "properties": {
+                                        "default": {
+                                            "type": "array", "minitems": 1,
+                                            "items": {
+                                                "type": "object",
+                                                "required": ["id", "code", "name", "phone"],
+                                                "additionalProperties": true,
+                                                "properties": {
+                                                    "id": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                                                    "code": {"type": "string"},
+                                                    "name": {"type": "string"},
+                                                    "phone": {
+                                                        "anyOf": [
+                                                            {
+                                                                "type": "array", "minitems": 1,
+                                                                "items": {"type": "string", "pattern": "[0-9]"}
+                                                            },
+                                                            {"type": "null"}
+                                                        ]
+                                                    },
+                                                    "localPhone": {
+                                                        "type": "array", "minitems": 1,
+                                                        "items": {"type": "string", "pattern": "[0-9]"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "currencyPrice": {"type": "number", "minimum": 0, "exclusiveMinimum": false},
+                            "insuranceSubProductId": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                            "price": {"type": "number", "minimum": 0, "exclusiveMinimum": true},
+                            "sportGroupFull": {
+                                "anyOf": [
+                                    {"type": "number", "minimum": 0, "exclusiveMinimum": false},
+                                    {"type": "null"}
+                                ]
+                            },
+                            "sportGroupId": {
+                                "anyOf": [
+                                    {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                                    {"type": "null"}
+                                ]
+                            },
+                            "territoryId": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                            "touristInfo": {
+                                "type": "array", "minitems": 1,
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "age", "perTourist", "resultPerTourist"
+                                    ],
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "age": {
+                                            "type": "number", "minimum": 0, "exclusiveMinimum": false, "maximum": 300,
+                                            "exclusiveMaximum": false
+                                        },
+                                        "perTourist": {
+                                            "type": "array", "minitems": 1,
+                                            "items": {
+                                                "type": "object",
+                                                "required": ["result", "serviceId"],
+                                                "additionalProperties": true,
+                                                "properties": {
+                                                    "result": {"type": "number"},
+                                                    "serviceId": {
+                                                        "anyOf": [
+                                                            {
+                                                                "type": "number",
+                                                                "minimum": 1,
+                                                                "exclusiveMinimum": false
+                                                            },
+                                                            {"type": "string"}
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "resultPerTourist": {"type": "number"},
+                                        "referenceValue": {"type": "number"}
+                                    }
+                                }
+                            },
+                            "apiCalculationId": {
+                                "anyOf": [
+                                    {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+                                    {"type": "null"}
+                                ]
+                            },
+                            "apiPrice": {"type": "number", "minimum": 0, "exclusiveMinimum": false},
+                            "currencyApiPrice": {"type": "number", "minimum": 0, "exclusiveMinimum": false},
+                            "debug": {"type": "string"},
+                            "paymentTask": {"type": "object"},
+                            "links": {
+                                "type": "object",
+                                "default": {"type": "string", "format": "uri"}
+                            }
+                        }
+                    },
+                    {"type": "array"}
+                ]
+            }
+        },
+        "task": {
+            "type": "object",
+            "required": [
+                "id", "code", "isSuccess", "isProcessing", "isCancelled", "isFatal", "hasError", "completeness",
+                "currentAction"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "id": {"type": "string"},
+                "code": {"type": "string"},
+                "isSuccess": {"type": "boolean"},
+                "isProcessing": {"type": "boolean"},
+                "isCancelled": {"type": "boolean"},
+                "isFatal": {"type": "boolean"},
+                "hasError": {"type": "boolean"},
+                "isInQueue": {"type": "boolean"},
+                "completeness": {
+                    "anyOf": [
+                        {"type": "string"},
+                        {"type": "number"}
+                    ]
+                },
+                "currentAction": {
+                    "anyOf": [
+                        {"type": "boolean"},
+                        {
+                            "type": "object",
+                            "required": ["description"],
+                            "additionalProperties": true,
+                            "properties": {
+                                "description": {"type": "string"},
+                                "updatable": {"type": "array"},
+                                "error": {"type": "string"}
+                            }
+                        }
+                    ]
+                },
+                "updatable": {"type": "array"},
+                "error": {"type": "string"}
+            }
+        }
+    }
+}

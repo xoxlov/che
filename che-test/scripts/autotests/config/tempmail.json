@@ -1,0 +1,34 @@
+{
+  "timeouts": {
+    "mail_delivery_max_wait_time": 120,
+    "delay_between_mail_check_retry": 15,
+    "policy_arrive_within_comment": "expect mail with policy to be available on temp-mail.ru within 'arrive_within' seconds",
+    "policy_arrive_within": 560,
+    "auth_recovery_arrive_within_comment":"expect mail with password recovery notification to be available on temp-mail.ru within 'arrive_within' seconds",
+    "auth_recovery_arrive_within": 560
+  },
+  "message": {
+    "skip_subjects": [
+      "Черехапа: Регистраци"
+    ],
+    "expected_in_from": [
+      "Черехапа",
+      "support@cherehapa.ru"
+    ],
+    "expect_in_to_comment": "temp-mail.ru doesn't show 'To' in reply, so no need to expect",
+    "expect_in_to": [
+      null
+    ],
+    "expected_in_subject": [
+      "Турист",
+      "траховка"
+    ],
+    "expected_in_body": [
+      "лагодарим Вас",
+      "На Ваш мобильный телефон направлено SMS",
+      "Cherehapa Страхование",
+      "215-11-98",
+      "555-21-98"
+    ]
+  }
+}

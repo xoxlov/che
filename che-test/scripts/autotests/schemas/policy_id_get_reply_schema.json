@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "required": ["status", "policy"],
+    "additionalProperties": false,
+    "properties": {
+        "status": {
+            "type": "number", "minimum": 200, "exclusiveMinimum": false, "maximum": 226, "exclusiveMaximum": false
+        },
+        "policy": {
+          "type": "object",
+          "required": [
+            "id", "code", "companyId", "dateCreated", "dateConfirmed", "dateCancelled",
+            "price", "fee","type"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+            "code": {"type": "string"},
+            "companyId": {"type": "number", "minimum": 1, "exclusiveMinimum": false},
+            "dateCreated": {
+              "type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"
+            },
+            "dateConfirmed": {
+              "anyOf": [
+                {"type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                {"type": "null"}
+              ]
+            },
+            "dateCancelled": {
+              "anyOf": [
+                {"type": "string", "pattern": "^[0-9]{2}.[0-9]{2}.[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}$"},
+                {"type": "null"}
+              ]
+            },
+            "price": {"type": "number", "minimum": 0, "exclusiveMinimum": true},
+            "fee": {"type": "number", "minimum": 0, "exclusiveMinimum": true},
+            "type":{"type": "string",
+              "oneOf": [{"enum": ["travel", "avia"]}]
+            }
+          }
+        }
+      }
+        
+}
+

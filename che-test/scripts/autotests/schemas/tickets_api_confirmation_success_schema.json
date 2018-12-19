@@ -1,0 +1,25 @@
+{
+    "type":"object",
+    "required":["orderId", "policy", "success"],
+    "additionalProperties":false,
+    "properties":{
+        "orderId": {"type":"string", "pattern":"^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}"},
+        "success": {"type":"boolean","enum":[true,false]},
+        "policy": {
+            "type":"object",
+            "required":["code", "download", "id", "preview"],
+            "additionalProperties":false,
+            "properties":{
+                "code": {
+                    "type":"array",
+                    "items":{
+                        "type":"string"
+                    }
+                },
+                "download": {"type":"string"},
+                "id": {"type":"integer", "minimum":1, "exclusiveMinimum":false},
+                "preview": {"type":"boolean"}
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "environment": {
+    "email_check": true
+  },
+  "insurance": {
+    "company": "alfa",
+    "currency": "USD",
+    "country": "Италия",
+    "insuredDays": 7,
+    "days_from_now_to_start": 4,
+    "service": {
+      "medicine": 50000
+    }
+  },
+  "traveller": {
+    "first_name": "TestTravellerFirstName",
+    "last_name": "TestTravellerLastName",
+    "age": 30
+  },
+  "buyer": {
+    "first_name": "TestBuyerFirstName",
+    "last_name": "TestBuyerLastName",
+    "middle_name": "TestBuyerMidName",
+    "first_name_rus": "ТестИмя",
+    "last_name_rus": "ТестФамилия",
+    "middle_name_rus": "ТестОтчество",
+    "phone": "+71111111111",
+    "email_comment1": "if 'buyer[email]' is empty - the email at 'temp-mail.ru' will be used, otherwise mail check will be omitted",
+    "email": "",
+    "buyer_birthday_delta_years": 30
+  },
+  "card": {
+    "number": "4111-1111-1111-1112",
+    "numberRaw": "4111111111111112",
+    "month": "12",
+    "year": "18",
+    "holder": "HOLDER NAME",
+    "cvv": "123"
+  },
+  "generator": {
+    "data_file_name": "full.yml",
+    "special_data_file_name": "acceptance.yml",
+    "data_catalog": "data",
+    "rules_dir": "che-rules/travel/",
+    "cashless_payment_amount": 3
+  }
+}

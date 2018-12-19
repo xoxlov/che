@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "number", "minimum": 200, "maximum": 226, "exclusiveMinimum": false,
+            "exclusiveMaximum": false
+        },
+        "data": {
+            "type": "array",
+            "minitems": 1,
+            "items": {"type": "array"}
+        },
+        "task": {
+            "type": "object",
+            "required": [
+                "id", "code", "isSuccess", "isProcessing", "isCancelled", "isFatal", "hasError", "completeness",
+                "currentAction"
+            ],
+            "properties": {
+                "id": {"type": "string"},
+                "code": {"type": "string"},
+                "isSuccess": {"type": "boolean"},
+                "isProcessing": {"type": "boolean"},
+                "isCancelled": {"type": "boolean"},
+                "isFatal": {"type": "boolean"},
+                "hasError": {"type": "boolean"},
+                "completeness": {
+                    "oneOf": [
+                        {"type": "string"},
+                        {"type": "null"}
+                    ]
+                },
+                "currentAction": {
+                    "type": "object",
+                    "required": ["description"],
+                    "additionalProperties": true,
+                    "properties": {
+                        "description": {"type": "string"}
+                    }
+                }
+            }
+        }
+    }
+}

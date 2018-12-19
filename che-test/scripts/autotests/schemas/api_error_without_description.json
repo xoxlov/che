@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "required": ["status","error"],
+    "additionalProperties": false,
+    "properties": {
+        "status": {
+            "type": "number",
+            "minimum": 400,
+            "maximum": 530,
+            "exclusiveMinimum": false,
+            "exclusiveMaximum": false
+        },
+        "error": {
+            "type": "object",
+            "required": ["type", "message", "description"],
+            "additionalProperties": false,
+            "properties": {
+                "type": {"type": "string"},
+                "message": {"type": "string"},
+                "description": {
+                    "type": "boolean",
+                    "enum": [false]
+                }
+            }
+        }
+    }
+}

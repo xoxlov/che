@@ -1,0 +1,4 @@
+{
+  "allow_sql_injection_on_production":false,
+  "production_db_host":"db.aws.che.lo"
+}

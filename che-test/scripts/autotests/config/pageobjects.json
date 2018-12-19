@@ -1,0 +1,24 @@
+{
+  "timeouts": {
+    "max_wait_for_title": 15,
+    "loop_time_delta": 0.5,
+    "element_wait_time_delta": 4,
+    "max_wait_for_login": 30
+  },
+  "vzr_pages": {
+    "main_page_timeout": 30,
+    "insurance_search_timeout": 30,
+    "calculator_page_timeout": 180,
+    "insurance_page_timeout": 16,
+    "payment_page_timeout": 16,
+    "policy_creation_animated_timeout": 20,
+    "policy_readyness_timeout": 301
+  },
+  "path": {
+    "screenshot_catalog": "screenshot",
+    "screenshot_name_suffix": "screenshot"
+  },
+  "osago_pages": {
+    "main_page_timeout": 30
+  }
+}

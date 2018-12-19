@@ -1,0 +1,10 @@
+{
+  "timeouts": {
+    "timeout_policy_file_is_ready": 300,
+    "timeout_policy_id_is_ready": 300,
+    "timeout_policy_marked_as_deleted": 60,
+    "timeout_supervisor_reload_time": 5,
+    "timeout_between_http_requests": 1
+  },
+  "authorization": "Basic YXBhaGVyZWhjOjlzQmJPeTZk"
+}
